@@ -1,5 +1,5 @@
-import app from "./src/app.js";
-import { connectToDatabase } from "./src/db/connection.js";
+import app from "./app.js";
+import { connectToDatabase } from "./db/connection.js";
 
 const startServer = () => {
   const PORT = process.env.PORT || 3000;
