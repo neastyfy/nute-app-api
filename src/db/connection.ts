@@ -17,7 +17,7 @@ const setSchema = async () => {
     await pool.query(`SET search_path TO ${schema}, public;`);
   };
 
-export const connectToDatabase = async () => {
+export const connectToDatabase = async (): Promise<void> => {
   try {
     await pool.connect();
     console.log("Database connected successfully!");
